@@ -236,7 +236,7 @@ server <- function(input, output, session) {
   
   output$EV_Range = renderPlot({
   range1  = ggplot(data = range, aes(y=reorder(Model, Range_Km), Range_Km, color = Brand, fill = Brand)) + 
-      geom_bar(stat = "identity",width = 0.5) + labs(title = "", x = "Model", y = "Range in (KM)")
+      geom_bar(stat = "identity",width = 0.5) + labs(title = "", y = "Model", x = "Range in (KM)")
   
   range1
     
